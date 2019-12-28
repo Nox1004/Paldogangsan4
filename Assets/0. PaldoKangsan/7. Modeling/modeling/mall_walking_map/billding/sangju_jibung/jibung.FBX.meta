@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 8746617ec21b7614a91b841aad78dec4
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: polySurface95
+    100002: polySurface54
+    100004: Object007
+    100006: polySurface60
+    100008: polySurface61
+    100010: Object012
+    100012: Object011
+    100014: Object002
+    100016: Object006
+    100018: Object014
+    100020: Object013
+    100022: Object010
+    100024: Object009
+    100026: Object008
+    100028: polySurface99
+    100030: polySurface82
+    100032: polySurface88
+    100034: fish_market_only:Box001 2
+    100036: fish_market_only:Box002 2
+    100038: fish_market_only:Box001 1
+    100040: fish_market_only:Box002 1
+    100042: fish_market_only:Box001
+    100044: fish_market_only:Box002
+    100046: yangjang_show:polySurface26
+    100048: //RootNode
+    100050: polySurface100
+    100052: Object005
+    100054: Object004
+    100056: Object003
+    100058: polySurface102
+    100060: polySurface134
+    100062: polySurface55
+    100064: Object001
+    100066: polySurface53
+    400000: polySurface95
+    400002: polySurface54
+    400004: Object007
+    400006: polySurface60
+    400008: polySurface61
+    400010: Object012
+    400012: Object011
+    400014: Object002
+    400016: Object006
+    400018: Object014
+    400020: Object013
+    400022: Object010
+    400024: Object009
+    400026: Object008
+    400028: polySurface99
+    400030: polySurface82
+    400032: polySurface88
+    400034: fish_market_only:Box001 2
+    400036: fish_market_only:Box002 2
+    400038: fish_market_only:Box001 1
+    400040: fish_market_only:Box002 1
+    400042: fish_market_only:Box001
+    400044: fish_market_only:Box002
+    400046: yangjang_show:polySurface26
+    400048: //RootNode
+    400050: polySurface100
+    400052: Object005
+    400054: Object004
+    400056: Object003
+    400058: polySurface102
+    400060: polySurface134
+    400062: polySurface55
+    400064: Object001
+    400066: polySurface53
+    2300000: polySurface95
+    2300002: Object007
+    2300004: polySurface60
+    2300006: polySurface61
+    2300008: Object012
+    2300010: Object011
+    2300012: Object002
+    2300014: Object006
+    2300016: Object014
+    2300018: Object013
+    2300020: Object010
+    2300022: Object009
+    2300024: Object008
+    2300026: polySurface99
+    2300028: polySurface88
+    2300030: fish_market_only:Box001 2
+    2300032: fish_market_only:Box002 2
+    2300034: fish_market_only:Box001 1
+    2300036: fish_market_only:Box002 1
+    2300038: fish_market_only:Box001
+    2300040: fish_market_only:Box002
+    2300042: polySurface100
+    2300044: Object005
+    2300046: Object004
+    2300048: Object003
+    2300050: polySurface102
+    2300052: Object001
+    3300000: polySurface95
+    3300002: Object007
+    3300004: polySurface60
+    3300006: polySurface61
+    3300008: Object012
+    3300010: Object011
+    3300012: Object002
+    3300014: Object006
+    3300016: Object014
+    3300018: Object013
+    3300020: Object010
+    3300022: Object009
+    3300024: Object008
+    3300026: polySurface99
+    3300028: polySurface88
+    3300030: fish_market_only:Box001 2
+    3300032: fish_market_only:Box002 2
+    3300034: fish_market_only:Box001 1
+    3300036: fish_market_only:Box002 1
+    3300038: fish_market_only:Box001
+    3300040: fish_market_only:Box002
+    3300042: polySurface100
+    3300044: Object005
+    3300046: Object004
+    3300048: Object003
+    3300050: polySurface102
+    3300052: Object001
+    4300000: polySurface60
+    4300002: polySurface61
+    4300004: polySurface102
+    4300006: polySurface100
+    4300008: polySurface88
+    4300010: polySurface99
+    4300012: fish_market_only:Box002
+    4300014: fish_market_only:Box001
+    4300016: fish_market_only:Box002
+    4300018: fish_market_only:Box001
+    4300020: fish_market_only:Box002
+    4300022: fish_market_only:Box001
+    4300024: polySurface95
+    4300026: Object001
+    4300028: Object002
+    4300030: Object003
+    4300032: Object004
+    4300034: Object005
+    4300036: Object006
+    4300038: Object007
+    4300040: Object008
+    4300042: Object009
+    4300044: Object010
+    4300046: Object011
+    4300048: Object012
+    4300050: Object013
+    4300052: Object014
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 1
+  userData: 

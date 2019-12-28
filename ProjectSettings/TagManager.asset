@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LeftTrigger
+  - RightTrigger
+  - Obstacle
+  - Veg4
+  - Super2
+  - Fruit3
+  - Fruit2
+  - Fish4
+  - Veg2
+  - Meat2
+  - Dubu3
+  - Veg1
+  - Fish3
+  - Meal3
+  - Meat3
+  - Super4
+  - Fish1
+  - Meal2
+  - Meat4
+  - Super3
+  - Veg3
+  - Dubu2
+  - Fruit1
+  - Coin
+  - CoinLikeStore
+  - TutorialArea
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

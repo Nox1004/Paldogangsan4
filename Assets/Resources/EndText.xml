@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<EndText>
+
+  <Result>
+    <ko>나들이 결과</ko>
+    <en>Game Result</en>
+    <fr>Game Result</fr>
+  </Result>
+
+  <Selected>
+    <ko>선택한 음식</ko>
+    <en>Selcted Foods</en>
+    <fr>Selcted Foods</fr>
+  </Selected>
+
+  <CurrentScore>
+    <ko>이번 점수</ko>
+    <en>Current Score</en>
+    <fr>Current Score</fr>
+  </CurrentScore>
+
+  <LastScore>
+    <ko>지난번 점수</ko>
+    <en>Last Score</en>
+    <fr>Last Score</fr>
+  </LastScore>
+
+  <AverageScore>
+    <ko>평균 점수</ko>
+    <en>Average Score</en>
+    <fr>Average Score</fr>
+  </AverageScore>
+
+  <DailyRanking>
+    <ko>일간 랭킹</ko>
+    <en>Daily Ranking</en>
+    <fr>Daily Ranking</fr>
+  </DailyRanking>
+
+  <WeeklyRanking>
+    <ko>주간 랭킹</ko>
+    <en>Weekly Ranking</en>
+    <fr>Weekly Ranking</fr>
+  </WeeklyRanking>
+  
+</EndText>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<NoticeText>
+  
+  <Confirm>
+    <True>
+      <Description>
+        <ko>사용 가능한 아이디입니다.</ko>
+        <en>You can use this ID</en>
+        <fr>Disponible ID.</fr>
+      </Description>
+
+      <ButtonText>
+        <ko>사용하기</ko>
+        <en>Use this ID</en>
+        <fr>Utilise cet ID</fr>
+      </ButtonText>
+    </True>
+
+    <False>
+      <Description>
+        <ko>중복된 아이디입니다.</ko>
+        <en>This ID is already taken</en>
+        <fr>Un duplicata ID.</fr>
+      </Description>
+
+      <Description>
+        <ko>다른 아이디를 사용해주세요.</ko>
+        <en>Please use another ID.</en>
+        <fr>S'il vous plaît utiliser un autre ID.</fr>
+      </Description>
+
+      <ButtonText>
+        <ko>확인</ko>
+        <en>OK</en>
+        <fr>confirmation</fr>
+      </ButtonText>
+    </False>
+  </Confirm>>
+
+  <ButtonText>
+    <ko>확인</ko>
+    <en>OK</en>
+    <fr>confirmation</fr>
+  </ButtonText>
+
+  <IDCheck>
+    <Description>
+      <ko>아이디 중복확인을 해주세요.</ko>
+      <en></en>
+      <fr></fr>
+    </Description>
+  </IDCheck>
+  
+  <NullCheck>
+    <Description>
+      <ko>모든 칸을 다 채워주세요.</ko>
+      <en>Please fill in all the spaces.</en>
+      <fr>S'il vous plaît remplir tous les espaces.</fr>
+    </Description>
+  </NullCheck>
+
+  <Create>
+    <Description>
+      <ko>아이디가 생성되었습니다.</ko>
+      <en>You have created your ID.</en>
+      <fr>Vous avez créé votre ID.</fr>
+    </Description>
+  </Create>
+  
+</NoticeText>

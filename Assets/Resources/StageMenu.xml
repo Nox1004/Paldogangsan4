@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StageMenu>
+  
+  <Description>
+    <ko>오른손을 들고 왼쪽으로 옮깁니다.&#10;선택 후 왼손을 움직여 계속하십시오.</ko>
+    <en>Lift your right hand and move it to the left.&#10;Select and proceed with the left hand.</en>
+    <fr>Soulevez votre main droite et déplacez-la vers la gauche.&#10;Sélectionnez et procédez avec la main gauche.</fr>
+  </Description>
+
+  <Description>
+    <ko>(Level 0은 튜토리얼입니다.)</ko>
+    <en>(Level 0 is a tutorial)</en>
+    <fr>(Niveau 0 est un didacticiel)</fr>
+  </Description>
+
+  <GetBackToTitle>
+    <ko>처음으로</ko>
+    <en>Login</en>
+    <fr>première</fr>
+  </GetBackToTitle>
+
+  <GetBackToMain>
+    <ko>질병창으로</ko>
+    <en>Disease</en>
+    <fr>maladie</fr>
+  </GetBackToMain>
+  
+</StageMenu>

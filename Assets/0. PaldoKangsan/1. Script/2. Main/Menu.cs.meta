@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8d8a1f51cac007446a7269191561f654
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_Image: {instanceID: 0}
+  - m_BGMClip: {fileID: 8300000, guid: 3c4206999107a6445b2cacd20b0829a9, type: 3}
+  - m_ChoiceClip: {instanceID: 0}
+  - m_NextClip: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

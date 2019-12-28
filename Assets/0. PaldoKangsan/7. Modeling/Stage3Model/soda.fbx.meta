@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: 790ba843215df814e9a4cb81c11096fd
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: milk_01
+    100002: milk_01 1
+    100004: milk_01 2
+    100006: milk_01_geom_set
+    100008: milk_01_geom_set 1
+    100010: milk_02
+    100012: refri1:_UNKNOWN_REF_NODE_fosterParent1
+    100014: refri1:Box001
+    100016: refri1:Box002
+    100018: refri1:Box003
+    100020: refri1:pCube1
+    100022: refri1:pCube10
+    100024: refri1:pCube11
+    100026: refri1:pCube12
+    100028: refri1:pCube13
+    100030: refri1:pCube14
+    100032: refri1:pCube15
+    100034: refri1:pCube16
+    100036: refri1:pCube17
+    100038: refri1:pCube18
+    100040: refri1:pCube19
+    100042: refri1:pCube2
+    100044: refri1:pCube20
+    100046: refri1:pCube21
+    100048: refri1:pCube22
+    100050: refri1:pCube23
+    100052: refri1:pCube24
+    100054: refri1:pCube3
+    100056: refri1:pCube4
+    100058: refri1:pCube5
+    100060: refri1:pCube6
+    100062: refri1:pCube7
+    100064: refri1:pCube8
+    100066: refri1:pCube9
+    100068: refri1:transform1
+    100070: refri1:transform2
+    100072: refri1:transform3
+    100074: refri1:transform4
+    100076: refri1:transform5
+    100078: refri1:transform6
+    100080: refri:_UNKNOWN_REF_NODE_fosterParent1
+    100082: refri:pCube1
+    100084: refri:pCube2
+    100086: refri:pCube3
+    100088: refri:pCube4
+    100090: refri:pCube5
+    100092: refri:pCube6
+    100094: refri:transform1
+    100096: refri:transform2
+    100098: refri:transform3
+    100100: refri:transform4
+    100102: refri:transform5
+    100104: refri:transform6
+    100106: //RootNode
+    400000: milk_01
+    400002: milk_01 1
+    400004: milk_01 2
+    400006: milk_01_geom_set
+    400008: milk_01_geom_set 1
+    400010: milk_02
+    400012: refri1:_UNKNOWN_REF_NODE_fosterParent1
+    400014: refri1:Box001
+    400016: refri1:Box002
+    400018: refri1:Box003
+    400020: refri1:pCube1
+    400022: refri1:pCube10
+    400024: refri1:pCube11
+    400026: refri1:pCube12
+    400028: refri1:pCube13
+    400030: refri1:pCube14
+    400032: refri1:pCube15
+    400034: refri1:pCube16
+    400036: refri1:pCube17
+    400038: refri1:pCube18
+    400040: refri1:pCube19
+    400042: refri1:pCube2
+    400044: refri1:pCube20
+    400046: refri1:pCube21
+    400048: refri1:pCube22
+    400050: refri1:pCube23
+    400052: refri1:pCube24
+    400054: refri1:pCube3
+    400056: refri1:pCube4
+    400058: refri1:pCube5
+    400060: refri1:pCube6
+    400062: refri1:pCube7
+    400064: refri1:pCube8
+    400066: refri1:pCube9
+    400068: refri1:transform1
+    400070: refri1:transform2
+    400072: refri1:transform3
+    400074: refri1:transform4
+    400076: refri1:transform5
+    400078: refri1:transform6
+    400080: refri:_UNKNOWN_REF_NODE_fosterParent1
+    400082: refri:pCube1
+    400084: refri:pCube2
+    400086: refri:pCube3
+    400088: refri:pCube4
+    400090: refri:pCube5
+    400092: refri:pCube6
+    400094: refri:transform1
+    400096: refri:transform2
+    400098: refri:transform3
+    400100: refri:transform4
+    400102: refri:transform5
+    400104: refri:transform6
+    400106: //RootNode
+    2300000: refri1:Box001
+    2300002: refri1:Box002
+    2300004: refri1:Box003
+    2300006: refri1:pCube10
+    2300008: refri1:pCube11
+    2300010: refri1:pCube12
+    2300012: refri1:pCube13
+    2300014: refri1:pCube14
+    2300016: refri1:pCube15
+    2300018: refri1:pCube16
+    2300020: refri1:pCube17
+    2300022: refri1:pCube18
+    2300024: refri1:pCube19
+    2300026: refri1:pCube20
+    2300028: refri1:pCube21
+    2300030: refri1:pCube22
+    2300032: refri1:pCube23
+    2300034: refri1:pCube24
+    2300036: refri1:pCube7
+    2300038: refri1:pCube8
+    2300040: refri1:pCube9
+    3300000: refri1:Box001
+    3300002: refri1:Box002
+    3300004: refri1:Box003
+    3300006: refri1:pCube10
+    3300008: refri1:pCube11
+    3300010: refri1:pCube12
+    3300012: refri1:pCube13
+    3300014: refri1:pCube14
+    3300016: refri1:pCube15
+    3300018: refri1:pCube16
+    3300020: refri1:pCube17
+    3300022: refri1:pCube18
+    3300024: refri1:pCube19
+    3300026: refri1:pCube20
+    3300028: refri1:pCube21
+    3300030: refri1:pCube22
+    3300032: refri1:pCube23
+    3300034: refri1:pCube24
+    3300036: refri1:pCube7
+    3300038: refri1:pCube8
+    3300040: refri1:pCube9
+    4300000: refri1:pCube7
+    4300002: refri1:pCube8
+    4300004: refri1:pCube9
+    4300006: refri1:pCube10
+    4300008: refri1:pCube11
+    4300010: refri1:pCube12
+    4300012: refri1:pCube13
+    4300014: refri1:pCube14
+    4300016: refri1:pCube15
+    4300018: refri1:pCube16
+    4300020: refri1:pCube17
+    4300022: refri1:pCube18
+    4300024: refri1:pCube19
+    4300026: refri1:pCube20
+    4300028: refri1:pCube21
+    4300030: refri1:pCube22
+    4300032: refri1:pCube23
+    4300034: refri1:pCube24
+    4300036: refri1:Box001
+    4300038: refri1:Box002
+    4300040: refri1:Box003
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 2b15eb054c8657e499439971f2f44c7e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_anisotropic2
+    second: {fileID: 2100000, guid: e0535116f520dd643aaf3342615c469a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_anisotropic3
+    second: {fileID: 2100000, guid: 887b79393c1c41641946af4aa463a0c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_anisotropic4
+    second: {fileID: 2100000, guid: d7f3ca1a132f9ac44bd9b9491db2bdd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_anisotropic5
+    second: {fileID: 2100000, guid: d046b13b839e9c94eb063f060aab3207, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_lambert2
+    second: {fileID: 2100000, guid: 37a94bec77ab92e499ff0a43aa758751, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_phongE3
+    second: {fileID: 2100000, guid: 6605205b976b99240a528c5a29a6cf43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_phongE4
+    second: {fileID: 2100000, guid: 7ba9b228589f902439969f2d4f82de5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refri1_phongE5
+    second: {fileID: 2100000, guid: 34354c31c3a39f94397a38ce6c6fad0d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
