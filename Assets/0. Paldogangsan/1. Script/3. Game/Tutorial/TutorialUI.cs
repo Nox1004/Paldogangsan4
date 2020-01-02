@@ -34,13 +34,6 @@ public class TutorialUI : Change {
         _image.sprite = sprite;
     }
 
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("Tutorial");
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
     protected override void ChangeLanguage()
     {
         XmlNodeList nodes = m_XmlDoc.SelectNodes("Tutorial/Description");

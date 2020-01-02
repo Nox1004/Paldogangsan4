@@ -11,9 +11,11 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private bool isUsingOfFaivMat;
 
     public Language GetLanguage { get { return current; } }
+
     public bool GetUsingOfFaivMat { get { return isUsingOfFaivMat; } }
 
     public string diseaseName { get; set; }                 // 질병이름
+
     public int languageType { get; protected set; }         // 현재 언어타입(정수형)
 
     public List<string> languages { get; private set; }     // 모든 언어타입(문자열)

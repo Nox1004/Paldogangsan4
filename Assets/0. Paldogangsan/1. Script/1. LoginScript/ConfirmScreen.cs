@@ -17,14 +17,6 @@ public class ConfirmScreen : Change {
         LoginManager.instance.Changechain(ChangeLanguage);
     }
 
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("ConfirmText");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
     protected override void ChangeLanguage()
     {
         XmlNodeList nodes = m_XmlDoc.SelectNodes("ConfirmText/Description");

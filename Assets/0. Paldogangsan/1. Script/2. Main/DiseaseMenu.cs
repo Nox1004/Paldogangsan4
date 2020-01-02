@@ -50,15 +50,6 @@ public class DiseaseMenu : Menu {
         MainManager.instance.MenusActive(false, true);
     }
 
-    // Change::LoadXml() 오버라이딩
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("DiseaseMenu");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
     // Change::ChangeLanguage() 오버라이딩
     protected override void ChangeLanguage()
     {

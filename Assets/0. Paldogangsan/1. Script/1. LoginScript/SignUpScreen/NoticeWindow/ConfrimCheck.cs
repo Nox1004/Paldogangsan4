@@ -9,14 +9,6 @@ public class ConfrimCheck : Notice {
     [Header("Confirm")]
     [SerializeField] private bool m_bConfirm;
 
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("NoticeText");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
     protected override void ChangeLanguage()
     {
         string relativePath= m_bConfirm ? ("NoticeText/Confirm/True") : ("NoticeText/Confirm/False") ;

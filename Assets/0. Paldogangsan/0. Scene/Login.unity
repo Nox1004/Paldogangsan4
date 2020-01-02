@@ -859,6 +859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1243d5d383d974145b6fd779e92fa795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 41f901b1b7f125944aa3e5057dae473b, type: 3}
   m_DescriptionText: {fileID: 1584080763}
   m_ButtonText: {fileID: 192746336}
 --- !u!1 &440391616
@@ -1086,6 +1087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e060511c6e8fa4eb0fdeda569c8393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 41f901b1b7f125944aa3e5057dae473b, type: 3}
   m_DescriptionText: {fileID: 1847669641}
   m_ButtonText: {fileID: 1521313314}
   m_bConfirm: 1
@@ -1707,6 +1709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6eca6a0051215f4a9ac612eef969212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 41f901b1b7f125944aa3e5057dae473b, type: 3}
   m_DescriptionText: {fileID: 1088985844}
   m_ButtonText: {fileID: 696830323}
 --- !u!1 &680535386
@@ -2837,7 +2840,7 @@ MonoBehaviour:
   m_LoginScreen: {fileID: 1685511846}
   m_MembershipScreen: {fileID: 1950808405}
   m_ConfirmScreen: {fileID: 1992855870}
-  m_bUseTitle: 1
+  m_bUseTitle: 0
   m_bUseToShowKeyboard: 1
 --- !u!1 &909050543
 GameObject:
@@ -4208,8 +4211,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1393817820}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 140.61432, y: 102.5247, z: 403.714}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5629,7 +5632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1685511845
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5665,6 +5668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65067abd3e029f542b9c18a67874e173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 9642d81849c9d864aa7b0d17813d5b37, type: 3}
   m_TitleText: {fileID: 1224168955}
   m_IDText: {fileID: 1526823435}
   m_LoginText: {fileID: 930899805}
@@ -6787,6 +6791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e060511c6e8fa4eb0fdeda569c8393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 41f901b1b7f125944aa3e5057dae473b, type: 3}
   m_DescriptionText: {fileID: 1621612665}
   m_ButtonText: {fileID: 1913181701}
   m_bConfirm: 0
@@ -6970,6 +6975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2eb4c7d5820a914faa2b9e7503b4179, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 54ee017dda274b442a6b92b4d0742296, type: 3}
   m_TitleText: {fileID: 1773095250}
   m_OverlapText: {fileID: 2127425041}
   m_BackText: {fileID: 76029042}
@@ -7078,6 +7084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83d008d759fdcc478cc3533cd5594c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: e3c953a2a6975f243ac3f0999b19d7cb, type: 3}
   m_DescriptionText: {fileID: 2004945064}
   m_ConfirmText: {fileID: 1756114782}
 --- !u!1 &2004872691
@@ -7166,6 +7173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 551697d4bee12d040871c93411a92840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_textAsset: {fileID: 4900000, guid: 41f901b1b7f125944aa3e5057dae473b, type: 3}
   m_DescriptionText: {fileID: 1540441779}
   m_ButtonText: {fileID: 945114383}
 --- !u!1 &2004945061

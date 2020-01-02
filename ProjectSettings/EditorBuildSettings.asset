@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/0. PaldoKangsan/0. Scene/Login.unity
+    path: Assets/0. Paldogangsan/0. Scene/Login.unity
     guid: 7dbaeeaa8c3739843a7ce5af291bdcd5
   - enabled: 1
-    path: Assets/0. PaldoKangsan/0. Scene/Main.unity
+    path: Assets/0. Paldogangsan/0. Scene/Main.unity
     guid: 3f4658b63f97efe47985f34b8a35ffee
   - enabled: 1
-    path: Assets/0. PaldoKangsan/0. Scene/InGame.unity
+    path: Assets/0. Paldogangsan/0. Scene/InGame.unity
     guid: 375c27b9e0c2d2942bff94660e106e23
   - enabled: 1
-    path: Assets/0. PaldoKangsan/0. Scene/InGame2.unity
+    path: Assets/0. Paldogangsan/0. Scene/InGame2.unity
     guid: 777a8218d38476248b7e4a2644d34e0f
   - enabled: 1
-    path: Assets/0. PaldoKangsan/0. Scene/LoadingScene.unity
-    guid: fed6ccaae73b2ad4196957c5ae648ab3
-  - enabled: 1
-    path: Assets/0. PaldoKangsan/0. Scene/Tutorial.unity
+    path: Assets/0. Paldogangsan/0. Scene/Tutorial.unity
     guid: c0f60d52faa6a6445b47474dd25ff9a1
+  - enabled: 1
+    path: Assets/0. Paldogangsan/0. Scene/LoadingScene.unity
+    guid: fed6ccaae73b2ad4196957c5ae648ab3
   m_configObjects: {}

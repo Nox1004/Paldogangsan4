@@ -3,16 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PleaseIDCheck : Notice {
-
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("NoticeText");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
+public class PleaseIDCheck : Notice
+{
     protected override void ChangeLanguage()
     {
         XmlNodeList nodes = m_XmlDoc.SelectNodes("NoticeText/IDCheck/Description");

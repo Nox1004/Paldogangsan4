@@ -15,16 +15,6 @@ public class Gender : Change
         Initialize();
     }
 
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("SignUpText");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
-    // Change를 상속받아 이용하다보니 함수명이 부적합하지만
-    // 설계자체는 사용해도 무방해 상속받아 이용 --> 머터리얼 설정하는 부분이라고 생각하면 된다.
     protected override void ChangeLanguage()
     {
         string load = FileIO.ReadStringFromFile("users/" + UserData.id + ".txt");

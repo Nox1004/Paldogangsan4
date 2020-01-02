@@ -8,6 +8,9 @@ using System.Xml;
 // </summary>
 public class Change : MonoBehaviour
 {
+    [SerializeField]
+    private TextAsset m_textAsset;
+    
     protected XmlDocument m_XmlDoc;
     
     public virtual void Initialize()
@@ -19,10 +22,11 @@ public class Change : MonoBehaviour
         ChangeLanguage();
     }
 
-    // <summary>
-    // 여러개의 Xml을 로드하기 때문에 별도로 재정의해주어야 한다.
-    // </summary>
-    protected virtual void LoadXml() { }
+    private void LoadXml()
+    {
+        m_XmlDoc = new XmlDocument();
+        m_XmlDoc.LoadXml(m_textAsset.text);
+    }
 
     // <summary>
     // 로드한 XML을 토대로 언어에 맞게 변경시켜준다.

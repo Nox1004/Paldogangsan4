@@ -60,15 +60,6 @@ public class StageMenu : Menu {
         }
     }
 
-    // Change::LoadXml() 오버라이딩
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("StageMenu");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
     // Change::ChangeLanguage() 오버라이딩
     protected override void ChangeLanguage()
     {

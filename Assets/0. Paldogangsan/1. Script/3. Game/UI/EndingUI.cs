@@ -327,14 +327,6 @@ public class EndingUI : Change
         }
     }
 
-    protected override void LoadXml()
-    {
-        TextAsset textAsset = Resources.Load<TextAsset>("EndText");
-
-        m_XmlDoc = new XmlDocument();
-        m_XmlDoc.LoadXml(textAsset.text);
-    }
-
     protected override void ChangeLanguage()
     {
         XmlNodeList nodes= m_XmlDoc.SelectNodes("EndText/Result");
