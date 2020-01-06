@@ -120,7 +120,7 @@ public class FoodManager : Singleton<FoodManager>
         }
 
         SetFoodArea(goodCount, badCount);
-        GameSceneManager.instance.GetStartUI.ShowGoodFoodList(goodCount, ref m_curDisease);
+        GameSceneManager.instance.getStartUI.ShowGoodFoodList(goodCount, ref m_curDisease);
     }
 
 

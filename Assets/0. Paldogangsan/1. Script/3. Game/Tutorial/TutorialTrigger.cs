@@ -16,14 +16,7 @@ public class TutorialTrigger : MonoBehaviour {
     [SerializeField]
     private bool _isUsingSound;
 
-    private Collider _collider;
-
     private Controller _player;
-
-    private void Awake()
-    {
-        _collider = GetComponent<Collider>();
-    }
 
     private void OnDisable()
     {

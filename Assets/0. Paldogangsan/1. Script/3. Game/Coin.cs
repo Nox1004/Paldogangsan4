@@ -21,7 +21,8 @@ public class Coin : MonoBehaviour {
                 controller.coinJumpPoint = false;
 
                 SoundManager.instance.PlayClip(getCoinClip);
-                CoinUI.instance.coinCount++;
+                GameSceneManager.instance.getGameInfoUI.IncreaseCoin();
+                
                 canTouchCoin = false;
                 gameObject.SetActive(false);
             }
@@ -33,7 +34,7 @@ public class Coin : MonoBehaviour {
                 !Check_CoinLocation() && InputSystem.instance.curHandState == InputSystem.HandState.Right)
             {
                 SoundManager.instance.PlayClip(getCoinClip);
-                CoinUI.instance.coinCount++;
+                GameSceneManager.instance.getGameInfoUI.IncreaseCoin();
                 canTouchCoin = false;
                 gameObject.SetActive(false);
             }
@@ -64,12 +65,6 @@ public class Coin : MonoBehaviour {
 
             if (this.CompareTag("Coin"))
             {
-                if (GameObject.Find("Canvas") != null)
-                {
-                    TutorialManager tutoMgr = GameObject.Find("Canvas").transform.Find("TutorialManager").GetComponent<TutorialManager>();
-                    StartCoroutine(tutoMgr.Jump());
-                }
-
                 controller.coinJumpPoint = true;
                 canTouchCoin = true;
                 coinModel.localScale = new Vector3(2.5f, 2.5f, 2.5f);
@@ -81,21 +76,11 @@ public class Coin : MonoBehaviour {
             }
             if(this.name=="Coin03")
             {
-                if (GameObject.Find("Canvas") != null)
-                {
-                    TutorialManager tutoMgr = GameObject.Find("Canvas").transform.Find("TutorialManager").GetComponent<TutorialManager>();
-                    StartCoroutine(tutoMgr.LeftHand());
-                }
                 canTouchCoin = true;
                 coinModel.localScale = new Vector3(2.5f, 2.5f, 2.5f);
             }
             if (this.name == "Coin02")
             {
-                if (GameObject.Find("Canvas") != null)
-                {
-                    TutorialManager tutoMgr = GameObject.Find("Canvas").transform.Find("TutorialManager").GetComponent<TutorialManager>();
-                    StartCoroutine(tutoMgr.RightHand());
-                }
                 canTouchCoin = true;
                 coinModel.localScale = new Vector3(2.5f, 2.5f, 2.5f);
             }
@@ -110,12 +95,6 @@ public class Coin : MonoBehaviour {
 
             if (this.CompareTag("Coin"))
             {
-                if (GameObject.Find("Canvas") != null)
-                {
-                    TutorialManager tutoMgr = GameObject.Find("Canvas").transform.Find("TutorialManager").GetComponent<TutorialManager>();
-                    StopCoroutine(tutoMgr.Jump());
-                    tutoMgr.tutoImg[4].SetActive(false);
-                }
                 controller.coinJumpPoint = false;
                 canTouchCoin = false;
                 gameObject.SetActive(false);
@@ -128,23 +107,11 @@ public class Coin : MonoBehaviour {
             }
             if (this.name == "Coin03")
             {
-                if (GameObject.Find("Canvas") != null)
-                {
-                    TutorialManager tutoMgr = GameObject.Find("Canvas").transform.Find("TutorialManager").GetComponent<TutorialManager>();
-                    StopCoroutine(tutoMgr.LeftHand());
-                    tutoMgr.tutoImg[2].SetActive(false);
-                }
                 canTouchCoin = false;
                 gameObject.SetActive(false);
             }
             if (this.name == "Coin02")
             {
-                if (GameObject.Find("Canvas") != null)
-                {
-                    TutorialManager tutoMgr = GameObject.Find("Canvas").transform.Find("TutorialManager").GetComponent<TutorialManager>();
-                    StopCoroutine(tutoMgr.RightHand());
-                    tutoMgr.tutoImg[3].SetActive(false);
-                }
                 canTouchCoin = false;
                 gameObject.SetActive(false);
             }

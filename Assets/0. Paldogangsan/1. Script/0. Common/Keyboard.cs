@@ -8,8 +8,9 @@ public sealed class Keyboard : InputModule
     protected override void FootKeyInput()
     {
         if (Input.GetKey(KeyCode.A))
+        {
             _inputSystem.LeftFootBinding?.Invoke();
-
+        }
         if (Input.GetKey(KeyCode.D))
             _inputSystem.RightFootBinding?.Invoke();
     }

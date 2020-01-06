@@ -45,6 +45,11 @@ public class LoadingSceneManager : MonoBehaviour {
         }
     }
 
+    public static string GetActiveScene()
+    {
+        return SceneManager.GetActiveScene().name;
+    }
+
     protected virtual void Start()
     {
         m_loadingTextValue = loadingText.text;

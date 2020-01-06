@@ -5,7 +5,7 @@ using UnityEngine;
 namespace FaivMat
 {
     [RequireComponent(typeof(FaivMat))]
-    public class FaivMove : MonoBehaviour
+    public sealed class FaivMove : InputModule
     {
         FaivMat m_FaivMat;
 
@@ -59,8 +59,10 @@ namespace FaivMat
             }
         }
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             m_FaivMat = GetComponent<FaivMat>();
         }
 
@@ -70,18 +72,23 @@ namespace FaivMat
                 this.enabled = false;
         }
 
-        private void FixedUpdate()
+        protected override void FixedUpdate()
         {
             DataDiscriminate();
 
+            base.FixedUpdate();
+        }
+
+        protected override void FootKeyInput()
+        {
             if (m_isPressedRight && m_isPressedLeft)
                 return;
 
-            if(m_isPressedLeft)
-                InputSystem.instance.LeftFootBinding?.Invoke();
+            if (m_isPressedLeft)
+                _inputSystem.LeftFootBinding?.Invoke();
 
             if (m_isPressedRight)
-                InputSystem.instance.RightFootBinding?.Invoke();
+                _inputSystem.RightFootBinding?.Invoke();
         }
     }
 }

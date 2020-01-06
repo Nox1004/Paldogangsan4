@@ -41,7 +41,7 @@ public class FoodArea : MonoBehaviour
     {
         if (touchOn)
         {
-            if (FoodUI.instance.curIndex < FoodUI.instance.maximum_Amount)
+            if (GameSceneManager.instance.getGameInfoUI.EnablePurchase())
             {
                 if (Check_CanBuyFood() && InputSystem.instance.curHandState == InputSystem.HandState.Left ||
                     !Check_CanBuyFood() && InputSystem.instance.curHandState == InputSystem.HandState.Right)
@@ -59,14 +59,20 @@ public class FoodArea : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("Player") && FoodUI.instance.curIndex < FoodUI.instance.maximum_Amount)
+        if (col.CompareTag("Player") && GameSceneManager.instance.getGameInfoUI.EnablePurchase())
         {
             //PlayerController의 손동작을 활성화한다.
             col.gameObject.GetComponentInChildren<PlayerController>().isActivedHand = true;
 
             SoundManager.instance.PlayClip(biggerClip, false, 1.0f);
 
-            CheckSameFood();
+            if (!GameSceneManager.instance.getGameInfoUI.CheckSameFood
+                (foodImage.gameObject.GetComponent<Renderer>().material))
+            {
+                touchOn = true;
+                foodImage.transform.localScale += defaultlocalScale * 0.75f;
+                imageMaterial.SetColor("_TintColor", new Color(0.5f, 0.5f, 0.5f, 0.5f));
+            }
         }
     }
 
@@ -88,29 +94,18 @@ public class FoodArea : MonoBehaviour
 
     void BuyFood()
     {
-        FoodUI foodUI = FoodUI.instance;
-
-        foodUI.foodArray[foodUI.curIndex] = foodImage.gameObject.GetComponent<Renderer>().material;
-        foodUI.foodArray[foodUI.curIndex].name = foodImage.gameObject.GetComponent<Renderer>().material.name;
-        foodUI.foods[foodUI.curIndex].SetActive(true);
-        foodUI.foods[foodUI.curIndex].GetComponent<GUITexture>().texture = foodUI.foodArray[foodUI.curIndex].mainTexture;
-        foodUI.foods[foodUI.curIndex].gameObject.transform.localScale = new Vector3(0.09f * 0.75f, 0.16f * 0.75f, 1);
-        if (FoodManager.instance.CheckFood(FoodUI.instance.foodArray[foodUI.curIndex]))
+        if (FoodManager.instance.CheckFood(foodImage.gameObject.GetComponent<Renderer>().material))
         {
-            //FoodManager.goodFood++;
             SoundManager.instance.PlayClip(correctClip);
-            foodUI.foods[foodUI.curIndex].GetComponent<GUITexture>().color = new Color(0.192f, 0.454f, 0.729f);
+            GameSceneManager.instance.getGameInfoUI.RightPurchase(foodImage.gameObject.GetComponent<Renderer>().material);
             FoodManager.instance.goodCount++;
         }
         else
         {
-            //FoodManager.badFood++;
             SoundManager.instance.PlayClip(incorrectClip);
-            foodUI.foods[foodUI.curIndex].GetComponent<GUITexture>().color = new Color(0.745f, 0.356f, 0.356f);
+            GameSceneManager.instance.getGameInfoUI.WrongPurchase(foodImage.gameObject.GetComponent<Renderer>().material);
             FoodManager.instance.badCount++;
         }
-
-        FoodUI.instance.curIndex++;
     }
 
     bool Check_CanBuyFood()
@@ -124,38 +119,4 @@ public class FoodArea : MonoBehaviour
         else
             return false;
     }
-
-    void CheckSameFood()
-    {
-        bool isSame = false;
-        if (FoodUI.instance.foodArray[0] == null)
-        {
-            foodImage.transform.localScale += defaultlocalScale * 0.75f;
-            imageMaterial.SetColor("_TintColor", new Color(0.5f, 0.5f, 0.5f, 0.5f));
-            touchOn = true;
-        }
-
-        else
-        {
-            for (int i = 0; i < FoodUI.instance.curIndex; i++)
-            {
-                if (FoodUI.instance.foodArray[i].name == foodImage.gameObject.GetComponent<Renderer>().materials[0].name)
-                {
-                    isSame = true;
-                    break;
-                }
-                else
-                {
-                    isSame = false;
-                }
-            }
-
-            if (!isSame)
-            {
-                touchOn = true;
-                foodImage.transform.localScale += defaultlocalScale * 0.75f;
-                imageMaterial.SetColor("_TintColor", new Color(0.5f, 0.5f, 0.5f, 0.5f));
-            }
-        }
-    }      
 }

@@ -3,25 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[DisallowMultipleComponent]
 public class StartUI : MonoBehaviour {
 
     [Header("Image Panel")]
     [SerializeField] Image m_infoPanel;
-    [SerializeField] Image m_FoodPanel;
+    [SerializeField] GameObject m_FoodPanel;
+    List<Image> m_FoodList;
     [SerializeField] Image m_ButtonPanel;
-
+    
     [Header("AudioClip")]
     [SerializeField] AudioClip m_NarrationClip;
     [SerializeField] AudioClip m_PressClip;
+    
+    Sprite[] m_buttonSprite;
+    
+    private bool m_isWatting;
 
-    [Header("Good Food Prefab")]
-    [SerializeField] GameObject m_GoodFoodPrefab;
+    private void Awake()
+    {
+        m_FoodList = new List<Image>();
+        Image[] images = m_FoodPanel.GetComponentsInChildren<Image>();
+        
+        for(int i = 0; i < images.Length; i++)
+        {
+            if (images[i].gameObject != m_FoodPanel)
+            {
+                m_FoodList.Add(images[i]);
 
-    Sprite[] m_buttonSprite; 
+                images[i].color = Color.white;
+                images[i].gameObject.SetActive(false);
+            }
+        }
+    }
 
-    private bool m_isWatting; 
-
-    void Start ()
+    private void Start ()
     {
         LoadSprite();
     }
@@ -41,17 +57,10 @@ public class StartUI : MonoBehaviour {
     // </summary>
     public void ShowGoodFoodList(int goodCount,ref Disease curDisease)
     {
-        for(int i = 0; i < goodCount; i++)
+        for (int i = 0; i < goodCount; i++)
         {
-            GameObject go = Instantiate(m_GoodFoodPrefab, m_FoodPanel.gameObject.transform);
-            go.GetComponent<Image>().material = curDisease.goodFood[i];
-
-            if (i < 3) {
-                go.transform.localPosition = new Vector3(-270.0f + 270.0f * i , 175.0f);
-            }
-            else {
-                go.transform.localPosition = new Vector3(-270.0f + 270.0f * (i - 3), -175.0f);
-            }
+            m_FoodList[i].material = curDisease.goodFood[i];
+            m_FoodList[i].gameObject.SetActive(true);
         }
     }
 

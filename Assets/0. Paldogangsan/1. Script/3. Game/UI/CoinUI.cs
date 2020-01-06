@@ -1,20 +1,40 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
-public class CoinUI : Singleton<CoinUI> {
+[DisallowMultipleComponent]
+public class CoinUI : MonoBehaviour {
 
-    public int coinCount { get; set; }
-    public Texture2D coinImage;
-    public Texture2D[] numberImage;
+    [SerializeField, Header("숫자 이미지")]
+    private List<Sprite> m_numbers;
 
-    void OnGUI()
+    [SerializeField]
+    private Image m_countImage;
+
+    public int count { get; private set; }
+
+    public void Increase()
     {
-        GUI.BeginGroup(new Rect(1390 * Screen.width / 1600, 10, Screen.width, Screen.height));
-        GUI.DrawTexture(new Rect(0, 0, 100 * Screen.width / 1600, 100 * Screen.height / 900), coinImage, ScaleMode.ScaleToFit);
-        GUI.EndGroup();
+        count++;
 
-        GUI.BeginGroup(new Rect(1490 * Screen.width / 1600, 10, Screen.width, Screen.height));
-        GUI.DrawTexture(new Rect(0, 0, 100 * Screen.width / 1600, 100 * Screen.height / 900), numberImage[coinCount], ScaleMode.ScaleToFit);
-        GUI.EndGroup();
+        if (count >= 10)
+            return;
+        else
+        {
+            if (m_countImage.sprite != m_numbers[count])
+                m_countImage.sprite = m_numbers[count];
+        }
     }
+
+    private void Awake()
+    {
+        if (m_countImage == null)
+        {
+            Debug.LogError("CoinUI 할당을 제대로해주세요");
+        }
+
+        count = 0;
+        m_countImage.sprite = m_numbers[0];
+    }
+
 }

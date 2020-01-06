@@ -7,21 +7,12 @@ public class GameSceneManager : Singleton<GameSceneManager> {
     public bool isGamePlaying { get; private set; }
 
     [Header("UI")]
-    [SerializeField] protected StartUI m_StartUI;
-    [SerializeField] protected EndingUI m_EndUI;
+    [SerializeField] private StartUI m_StartUI;
+    [SerializeField] private GameInfoUI m_GameInfoUI;
+    [SerializeField] private EndingUI m_EndUI;
 
-    // 기존에 만들어둔 게임씬 UI를 그대로 사용한다.
-    // ㄴ UGUI를 이용하게 변경예정
-    [Header("GameInfoUI")]
-    [SerializeField] protected GameObject m_GameInfoUI;
-
-    public StartUI GetStartUI { get { return m_StartUI; } }
-    public GameObject GetGameInfoUI { get { return m_GameInfoUI; } }
-
-    protected void Reset()
-    {
-        m_GameInfoUI = GameObject.Find("GameInfoUI");
-    }
+    public StartUI getStartUI { get { return m_StartUI; } }
+    public GameInfoUI getGameInfoUI { get { return m_GameInfoUI; } }
 
     protected virtual void Start()
     {

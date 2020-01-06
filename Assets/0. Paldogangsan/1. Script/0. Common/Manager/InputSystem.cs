@@ -8,22 +8,22 @@ public class InputSystem : Singleton<InputSystem>
     [SerializeField] PlayerController _playerController = null;
     public PlayerController playerController { get { return _playerController; } }
 
-    [SerializeField] protected bool m_isPressingRF; //오른발버튼이 눌리는 중인가?
+    [SerializeField] private bool m_isPressingRF; //오른발버튼이 눌리는 중인가?
     public bool isPressingRF { get { return m_isPressingRF; } }
 
-    [SerializeField] protected bool m_isPressingLF; //왼발버튼이 눌리는 중인가?
+    [SerializeField] private bool m_isPressingLF; //왼발버튼이 눌리는 중인가?
     public bool isPressingLF { get { return m_isPressingLF; } }
 
-    [SerializeField] protected bool m_isPressingRH; //오른손버튼이 눌리는 중인가?
+    [SerializeField] private bool m_isPressingRH; //오른손버튼이 눌리는 중인가?
     public bool isPressingRH { get { return m_isPressingRF; } }
 
-    [SerializeField] protected bool m_isPressingLH; //왼발버튼이 눌리는 중인가?
+    [SerializeField] private bool m_isPressingLH; //왼발버튼이 눌리는 중인가?
     public bool isPressingLH { get { return m_isPressingLH; } }
 
     public enum FootState { Stop = 0, Right, Left }
     public enum HandState { Stop = 0, Right, Left, Jump}
-    [SerializeField] protected FootState m_curFootState;
-    [SerializeField] protected HandState m_curHandState;
+    [SerializeField] private FootState m_curFootState;
+    [SerializeField] private HandState m_curHandState;
     public FootState curFootState { get { return m_curFootState; } }
     public HandState curHandState { get { return m_curHandState; } }
 
@@ -60,7 +60,6 @@ public class InputSystem : Singleton<InputSystem>
     public void FootSystemBinding(Action LFBind = null, Action RFBind = null)
     {
         LeftFootBinding = LFBind;
-
         RightFootBinding = RFBind;
     }
 

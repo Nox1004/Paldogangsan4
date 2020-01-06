@@ -5,10 +5,6 @@ using UnityEngine;
 using System.IO.Ports;
 using System.Threading;
 
-/// <summary>
-/// 코루틴 vs 쓰레드 이용
-/// 쓰레드 이용시 : 
-/// </summary>
 namespace FaivMat
 {
     [RequireComponent(typeof(FaivData))]

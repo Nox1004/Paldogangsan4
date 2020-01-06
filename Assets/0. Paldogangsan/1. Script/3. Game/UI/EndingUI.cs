@@ -6,14 +6,10 @@ using System.IO;
 using System;
 
 // 기존에 있던 스크립트 약간만 변형
-// 비효율적인 방법으로 되있는거 같지만 수정하기에는 시간이 부족해서 그대로 둔다.
+// 비효율적인 방법으로 되있는거 같지만 현재 결과 판정은 중요하지 않다고 생각해 약간만 수정
 public class EndingUI : Change
 {
     private FoodManager m_FoodManager;
-    public GameObject GameInfoUI;
-
-    public Timer timer;
-    public FoodUI foodUI;
 
     int stepCount;
     int timerSec;
@@ -82,12 +78,6 @@ public class EndingUI : Change
             m_Foods[i] = sprites[i];
         }
 
-        GameInfoUI.SetActive(false);
-        for (int i = 0; i < foodUI.curIndex; i++)
-        {
-            foodUI.foods[i].SetActive(false);
-        }
-
         initEnding();
     }
 
@@ -148,12 +138,6 @@ public class EndingUI : Change
         if (_isActived) {
             if (InputSystem.instance.curHandState == InputSystem.HandState.Right)
             {
-                if (CoinUI.instance != null)
-                {
-                    CoinUI.instance.coinCount = 0;
-                    Coin.tempCoin = 0;
-                }
-
                 _isActived = false;
                 FoodManager.stage = 0;
 
@@ -162,25 +146,24 @@ public class EndingUI : Change
             else if (InputSystem.instance.curHandState == InputSystem.HandState.Left)
             {
                 _isActived = false;
-
-                if (CoinUI.instance != null)
-                    CoinUI.instance.coinCount = Coin.tempCoin;
-
-                LoadingSceneManager.LoadScene("inGame");
+                LoadingSceneManager.LoadScene(LoadingSceneManager.GetActiveScene());
             }
         }
     }
 
     public void initEnding()
     {
-        for (int i = 0; i < foodUI.foodArray.Length; i++)
+        var gameInfoUI = GameSceneManager.instance.getGameInfoUI;
+
+        for (int i = 0; i < gameInfoUI.GetBasketCount(); i++)
         {
             for (int j = 0; j < 45; j++)
             {
-                if (foodUI.foodArray[i] != null && foodUI.foodArray[i].name == m_Foods[j].name)
+                if (gameInfoUI.CheckSameFood(i, m_Foods[j].name))
                 {
-                    if (FoodManager.instance.CheckFood(foodUI.foodArray[i]))
+                    if (FoodManager.instance.CheckFood(gameInfoUI.GetBasketMaterial(i)))
                     {
+                        // dd
                         SelectFoods[i].sprite = m_Foods[j];
                         SelectFoods[i].GetComponent<Image>().color = Color.green;
                     }
@@ -271,10 +254,8 @@ public class EndingUI : Change
 
     private void CalculateScore()
     {
-        int stepCount = Step.stepCount;
-        int timerSec = timer.getSec();
-        int timerMin = timer.getMin();
-        int coin = (CoinUI.instance != null)? CoinUI.instance.coinCount: 0;
+        int coin = (GameSceneManager.instance.getGameInfoUI.coinUI != null)?
+            GameSceneManager.instance.getGameInfoUI.coinUI.count: 0;
 
         score = (m_FoodManager.goodCount * 50) + (-40 * m_FoodManager.badCount) + (coin * 30);
         score += 120 - (int)Time.timeSinceLevelLoad;

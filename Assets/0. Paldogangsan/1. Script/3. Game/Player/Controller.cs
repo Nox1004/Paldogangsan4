@@ -183,7 +183,7 @@ public class Controller : MonoBehaviour
                 AudioSource.PlayClipAtPoint(footClip[0], gameObject.transform.position);
                 speedR = 0;
                 speedL = 0.01f;
-                Step.stepCount++;
+                GameSceneManager.instance.getGameInfoUI.IncreaseStep();
                 InputSystem.instance.ResetFoot(true, false);
             }
         }
@@ -200,7 +200,7 @@ public class Controller : MonoBehaviour
                 AudioSource.PlayClipAtPoint(footClip[0], gameObject.transform.position);
                 speedL = 0;
                 speedR = 0.01f;
-                Step.stepCount++;
+                GameSceneManager.instance.getGameInfoUI.IncreaseStep();
                 InputSystem.instance.ResetFoot(false, true);
             }
         }
